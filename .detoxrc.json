@@ -4,7 +4,7 @@
   "configurations": {
     "ios": {
       "type": "ios.simulator",
-      "binaryPath": "ios/build/Build/Products/Release-iphonesimulator/Detox01.app",
+      "binaryPath": "/Users/tranhiep/Library/Developer/Xcode/DerivedData/Detox01-epbmhnkbbhjmdzfpwfvjshlyvvnu/Build/Products/Debug-iphonesimulator/Detox01.app",
       "build": "xcodebuild -workspace ios/Detox01.xcworkspace -scheme Detox01 -configuration Release  -sdk iphonesimulator -derivedDataPath ios/build",
       "device": {
         "type": "iPhone 8"
