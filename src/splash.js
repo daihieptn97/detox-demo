@@ -6,7 +6,7 @@ function Splash() {
   const navigation = useNavigation();
   useEffect(() => {
     setTimeout(() => {
-      navigation.replace("Home");
+      navigation.replace("Login");
     }, 2000);
   }, []);
   return <View style={{ backgroundColor: "#95A78D", flex: 1, justifyContent: "center", alignItems: "center" }}>

@@ -4,18 +4,10 @@
   "configurations": {
     "ios": {
       "type": "ios.simulator",
-      "binaryPath": "/Users/tranhiep/Library/Developer/Xcode/DerivedData/Detox01-epbmhnkbbhjmdzfpwfvjshlyvvnu/Build/Products/Debug-iphonesimulator/Detox01.app",
-      "build": "xcodebuild -workspace ios/Detox01.xcworkspace -scheme Detox01 -configuration Release  -sdk iphonesimulator -derivedDataPath ios/build",
+      "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/Detox01.app",
+      "build": "xcodebuild -workspace ios/Detox01.xcworkspace -scheme Detox01 -configuration Debug  -sdk iphonesimulator -derivedDataPath ios/build",
       "device": {
         "type": "iPhone 8"
-      }
-    },
-    "android": {
-      "type": "android.emulator",
-      "binaryPath": "android/app/build/outputs/apk/release/app-release.apk",
-      "build": "cd android ; ./gradlew assembleRelease assembleAndroidTest -DtestBuildType=release ; cd -",
-      "device": {
-        "avdName": "Pixel_API_28_AOSP"
       }
     }
   }

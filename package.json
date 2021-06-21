@@ -28,11 +28,22 @@
     "babel-jest": "^26.6.3",
     "detox": "^18.18.0",
     "eslint": "7.14.0",
-    "jest": "^26.6.3",
+    "jest": "^27.0.4",
+    "jest-circus": "^27.0.4",
     "metro-react-native-babel-preset": "^0.64.0",
     "react-test-renderer": "17.0.1"
   },
   "jest": {
     "preset": "react-native"
+  },
+  "detox": {
+    "configurations": {
+      "ios.sim.debug": {
+        "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/Detox01.app",
+        "build": "xcodebuild -workspace ios/Detox01.xcworkspace -scheme Detox01 -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build -UseModernBuildSystem=NO",
+        "type": "ios.simulator",
+        "name": "iPhone 8"
+      }
+    }
   }
 }
